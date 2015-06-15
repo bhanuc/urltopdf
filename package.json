@@ -1,6 +1,6 @@
 {
   "name": "urltopdf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Converts webpages to pdf",
   "main": "./lib/main.js",
   "scripts": {

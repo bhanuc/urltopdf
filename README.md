@@ -1,12 +1,15 @@
 #urltopdf
 ==
 
-Converts webpages to pdf
+Converts webpages to pdf ( A wrapper on wkhtmltopdf)
 
 Usage:
 
 ```JavaScript
 var urltopdf = require('urltopdf');
+urltopdf.topdf( url, output, option-object, callback)
+
+//Example ->
 urltopdf.topdf('https://regrob.com/', 'null.pdf', {'page-size': 'A3'}, function(err,std){ 
 	if(err){
 		console.log(err);
@@ -19,6 +22,12 @@ urltopdf.topdf('https://regrob.com/', 'null.pdf', {'page-size': 'A3'}, function(
 });
 ```
 
+For full list of supported options visit -
+http://wkhtmltopdf.org/usage/wkhtmltopdf.txt
+
+
+For full list of supported page size visit -
+http://qt-project.org/doc/qt-4.8/qprinter.html#PaperSize-enum
 
 #Installation:
 
